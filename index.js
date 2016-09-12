@@ -45,10 +45,12 @@ function viewCart() {
      console.log('Your shopping cart is empty.');
   }
   else {
-    var itemAndPrice = []
- cart.forEach(function (item, price) {
-  itemAndPrice.push(` ${item} at ${price}`)
-});
+  //  var itemAndPrice = []
+// cart.forEach(function (item, price) {
+
+ for (var itemAndPrice in viewCart) {
+  itemAndPrice.push(` ${viewCart[itemAndPrice]} at ${itemAndPrice}`)
+};
 
 }
 console.log(`In your cart, you have${itemAndPrice.join(',')}`)
