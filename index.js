@@ -45,7 +45,7 @@ function viewCart() {
      console.log('Your shopping cart is empty.');
   }
   else {
-  //  var itemAndPrice = []
+ var itemAndPrice = []
 // cart.forEach(function (item, price) {
 
  for (var itemAndPrice in viewCart) {
